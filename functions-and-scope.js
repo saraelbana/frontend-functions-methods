@@ -69,13 +69,15 @@ console.log(averageGrade(grades));
 // averageGrade(grades) geeft 6.642857142857143
 // averageGrade([6, 4, 5]) geeft xxxx
 // averageGrade([8, 9, 4, 6, 10]) geeft xxxx
-
+console.log( averageGrade([6, 4, 5]));
+console.log( averageGrade([8, 9, 4, 6, 10]));
 
 /* 2c: Afronden op twee decimalen */
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
 // Tip: Google is your best friend!
 
-
+let roundedNumber = Math.round(averageGrade(grades));
+console.log(roundedNumber);
 
 /* Bonusopdracht: hoogste cijfer */
 
