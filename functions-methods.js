@@ -57,3 +57,17 @@ console.log(typeOfEmail(noviWorkerDomain));
 // checkEmailValidity("n.eekenanovi.nl") geeft false - want geen @
 // checkEmailValidity("n.eeken@novinl.") geeft false - want de punt mag niet als laatst
 // checkEmailValidity("tessmellink@novi,nl") geeft false - want er staat een komma in
+
+function  checkEmailValidity(email){
+    for (let i=0;i<email.length;i++){
+        if (email.substring(i,i)==="@") {
+            if (email.substring(i, i) === ",")
+                return false;
+            else {
+                if (email.substring(i, i) === "." && i == email.length - 1)
+                    return false;
+            }
+            return  true;
+        }
+    }
+}
