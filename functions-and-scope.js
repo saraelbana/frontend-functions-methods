@@ -50,6 +50,15 @@ console.log(cumLaude([8, 9, 4, 6, 10]));
 
 // ---- Verwachte uitkomst: 6.642857142857143
 
+function averageGrade(grades){
+    let totalGrtotades = 0;
+    for(let i =0; i<grades.length;i++)
+        totalGrades +=grades;
+    let average = totalGrades/grades.length;
+
+    return average;
+}
+console.log(averageGrade(grades));
 
 /* 2b: Omschrijven tot een herbruikbare functie */
 // Schrijf een functie genaamd averageGrade, die een array van cijfers verwacht (zoals grades) en het gemiddelde cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 2a.
