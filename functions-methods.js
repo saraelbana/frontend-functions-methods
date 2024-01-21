@@ -59,15 +59,5 @@ console.log(typeOfEmail(noviWorkerDomain));
 // checkEmailValidity("tessmellink@novi,nl") geeft false - want er staat een komma in
 
 function  checkEmailValidity(email){
-    for (let i=0;i<email.length;i++){
-        if (email.substring(i,i)==="@") {
-            if (email.substring(i, i) === ",")
-                return false;
-            else {
-                if (email.substring(i, i) === "." && i == email.length - 1)
-                    return false;
-            }
-            return  true;
-        }
-    }
+    return email.contains("@") && !email.contains(",") && email.contains(".") && !email.endsWith(".");
 }
